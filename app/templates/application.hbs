@@ -1,5 +1,21 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
-
+<head>
+  <link href="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.js"></script>
+</head>
+<h1>Tic Tac Toe</h1>
+<h2>by Jaime Aughney</h2>
+<div class="menu">
+  {{#link-to 'index'}}
+    <button class="mdc-button mdc-button--raised">
+        <div class="mdc-button__ripple"></div>
+        <span class="mdc-button__label">Home</span>
+    </button>
+  {{/link-to}}
+  {{#link-to 'game'}}
+    <button class="mdc-button mdc-button--raised">
+        <div class="mdc-button__ripple"></div>
+        <span class="mdc-button__label">Play game</span>
+    </button>
+  {{/link-to}}
+</div>
 {{outlet}}

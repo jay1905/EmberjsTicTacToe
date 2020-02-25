@@ -1,0 +1,21 @@
+<div class="players-turn">
+  <h2>Player turn: {{this.playerTurn}}</h2>
+</div>
+<canvas height="500" width="500" {{did-insert this.configure}}></canvas>
+<div>
+  <button class="mdc-button mdc-button--raised" {{on "click" this.reset}} >
+    <div class="mdc-button__ripple"></div>
+    <span class="mdc-button__label">Reset</span>
+  </button>
+</div>
+<h1 class="score-title">Score</h1>
+<div class="score">
+  <div class="player-score">
+    <h2>Player X</h2>
+    <h3>{{this.playerXScore}}</h3>
+  </div>
+  <div class="player-score">
+    <h2>Player O</h2>
+    <h3>{{this.playerOScore}}</h3>
+  </div>
+</div>
